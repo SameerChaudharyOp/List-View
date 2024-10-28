@@ -1,0 +1,271 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+.search {
+  border-radius: 14px;
+}
+
+.check {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  position: relative;
+  max-width: 28.5rem;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: gray;
+}
+
+.search-input {
+  width: 122%;
+  padding: 14px 20px 14px 40px;
+  border: 1px solid #454545;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+  cursor: pointer;
+}
+
+.accordion {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 35rem;
+  margin-top: 1.5rem;
+  overflow: hidden;
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.accordion-image {
+  border-radius: 50%;
+  margin-right: 15px;
+  width: 60px;
+  height: 60px;
+}
+
+.accordion-name {
+  flex-grow: 1;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.accordion-icon {
+  color: #888;
+}
+
+.accordion-content {
+  padding-top: 15px;
+  color: #555;
+  padding: 30px;
+}
+
+.accordian-content-upeer {
+  display: flex;
+}
+.accordion-content div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.accordion-content p {
+  margin: 5px 0;
+  font-size: 0.95em;
+}
+
+.accordion-content strong {
+  display: block;
+  color: #888;
+  margin-bottom: 3px;
+}
+
+.accordion-content .description {
+  margin-top: 15px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.action-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  color: #888;
+  justify-content: end !important;
+}
+
+.action-icons svg {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.action-icons svg:hover {
+  color: #333;
+}
+
+.del-icon {
+  color: red;
+}
+
+.edit-icon {
+  color: blue;
+}
+.text-clr {
+  color: black;
+}
+
+.edit-input-name {
+  width: 25%;
+  padding: 8px 14px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.edit-input-mid {
+  width: 50%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+.edit-input-des {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  min-height: 80px;
+}
+
+.save-icon {
+  color: green;
+  background-color: white;
+  border: 2px solid green;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cancel-icon {
+  color: red;
+  background-color: white;
+  border: 2px solid red;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.modal-header h2 {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+  font-weight: 500;
+}
+
+.close-icon {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.modal-body {
+  margin: 20px 0;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-cancel {
+  background-color: white;
+  border: 2px solid #bfbfbf;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-confirm {
+  background-color: #ff4500;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-cancel:hover {
+  background-color: #f0f0f0;
+}
+
+.btn-confirm:hover {
+  background-color: #e63e00;
+}
+
+.blur {
+  filter: blur(8px);
+  transition: filter 0.3s ease;
+}
