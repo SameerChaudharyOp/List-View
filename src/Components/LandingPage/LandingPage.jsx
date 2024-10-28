@@ -27,7 +27,6 @@ function LandingPage() {
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [userToDelete, setUserToDelete] = useState(null);
 
-    // Save user data to localStorage whenever it changes
     useEffect(() => {
       localStorage.setItem("userData", JSON.stringify(userData));
     }, [userData]);

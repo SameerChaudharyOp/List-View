@@ -269,3 +269,36 @@
   filter: blur(8px);
   transition: filter 0.3s ease;
 }
+
+/* Media Queries*/
+@media only screen and (max-width: 600px) {
+  .search-container {
+    max-width: 80%;
+  }
+
+  .search-input {
+    font-size: 14px;
+  }
+
+  .accordion {
+    width: 100%;
+  }
+
+  .accordion-name {
+    font-size: 1em;
+  }
+
+  .action-icons {
+    align-items: flex-end;
+  }
+
+  .edit-input-name,
+  .edit-input-mid,
+  .edit-input-des {
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+}
